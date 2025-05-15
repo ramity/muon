@@ -1,0 +1,9 @@
+services:
+  muon_build:
+    build:
+      context: ./
+      dockerfile: docker/build/Dockerfile
+    container_name: muon_build
+    image: muon_build
+    volumes:
+      - ./app:/muon
