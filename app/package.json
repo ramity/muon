@@ -9,9 +9,9 @@
     "scripts": {
         "start": "webpack --mode development && electron .",
         "build": "webpack --mode production",
-        "package:win": "electron-packager . Muon --overwrite --platform=win32 --arch=x64 --out=release --prune=true --icon=icon.ico",
-        "package:mac": "electron-packager . Muon --overwrite --platform=darwin --arch=x64 --out=release --prune=true --icon=icon.ico",
-        "package:linux": "electron-packager . Muon --overwrite --platform=linux --arch=x64 --out=release --prune=true --icon=icon.ico"
+        "package:windows": "electron-packager . Muon --overwrite --platform=win32 --arch=x64 --out=release --prune=true --icon=icon.ico",
+        "package:linux": "electron-packager . Muon --overwrite --platform=linux --arch=x64 --out=release --prune=true --icon=icon.ico",
+        "package:mac": "electron-packager . Muon --overwrite --platform=darwin --arch=x64 --out=release --prune=true --icon=icon.ico"
     },
     "devDependencies": {
         "@babel/core": "^7.22.0",
@@ -19,14 +19,12 @@
         "@babel/preset-react": "^7.22.0",
         "babel-loader": "^9.1.0",
         "css-loader": "^6.8.1",
+        "electron": "^29.0.0",
         "electron-packager": "^17.1.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
         "style-loader": "^3.3.3",
         "webpack": "^5.91.0",
-        "webpack-cli": "^5.1.4",
-        "electron": "^29.0.0"
-    },
-    "dependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "webpack-cli": "^5.1.4"
     }
 }
